@@ -1,127 +1,84 @@
-syntax enable
-filetype indent on
+syntax enable filetype indent on
 set number
 set relativenumber
+set numberwidth=3
 set mouse=a
-set cursorline
 set termguicolors
 set t_Co=256
+set linebreak
 set autoindent
-set tabstop=2
-set shiftwidth=2
+set breakindent
+set tabstop=4
+set shiftwidth=4
 set expandtab
-set clipboard+=unnamedplus
+set nobackup
+set nowritebackup
+set signcolumn=yes
+set foldcolumn=1
+set cursorline
+set clipboard-=autoselect
 
 
-
-"Plugins
 "==================================
-call plug#begin()
-
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-Plug 'sbdchd/neoformat'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'preservim/nerdtree'
-Plug 'windwp/nvim-autopairs'
-Plug 'windwp/nvim-ts-autotag'
-Plug 'kyazdani42/nvim-web-devicons'
-Plug 'ryanoasis/vim-devicons'
-Plug 'nvim-lualine/lualine.nvim'
-Plug 'akinsho/toggleterm.nvim', {'tag' : 'v2.*'}
-Plug 'tpope/vim-commentary'
-Plug 'ap/vim-css-color'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim'
-Plug 'neoclide/vim-jsx-improve'
-Plug 'kdheepak/tabline.nvim'
-
-Plug 'sainnhe/gruvbox-material'
+set statusline=
+set statusline+=%#CursorColumn#
+set statusline+=\ %10f
+set statusline+=%#LineNr#
+set statusline+=%=
+set statusline+=%#CursorColumn#
+set statusline+=\ %7y
+set statusline+=\ %p%%
+set statusline+=\ %5l
 
 
-call plug#end()
+"Imports
+"==================================
+runtime ./plug.vim
+runtime ./maps.vim
 
 
 "General
 "==================================
+let g:python_highlight_all = 1
+let g:buffet_always_show_tabline = 0
+
+let g:gruvbox_material_transparent_background = 0
+let g:gruvbox_material_enable_bold = 1
+let g:gruvbox_material_better_performance = 1
 colorscheme gruvbox-material
-inoremap jk <Esc>
-nnoremap <C-s> :w<CR>
-nnoremap <A-q> :q<CR>
-nnoremap <F1> :noh<CR>
-nnoremap ; :
-let python_highlight_all=1
-
-hi Normal guibg=NONE ctermbg=NONE
-hi LineNr guibg=NONE ctermbg=NONE
-hi SignColumn guibg=NONE ctermbg=NONE
-hi EndOfBuffer guibg=NONE ctermbg=NONE
 
 
+let g:ale_sign_column_always = 1
+let g:ale_sign_error = ""
+let g:ale_sign_info = ""
+let g:ale_sign_warning = ""
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_info_str = 'I'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 
-"==================================
-" Nedtree
-nnoremap <C-n> :NERDTreeToggle<CR>
-autocmd VimEnter * if argc() == 0 && !exists('s:std_in') | NERDTreeToggle | endif
-let g:NERDTreeWinSize=23
-nnoremap <C-n> :NERDTreeToggle <CR>
 
-
-
-" ======================================
-" NeoFormat
-autocmd BufWritePre *.html Neoformat
-
-            
+let g:clang_library_path='/usr/lib/llvm-3.8/lib'
 
 "==================================
-" Telescope
-nnoremap <C-l> :Telescope find_files<CR>
-
-
-
-"==================================
-"ToggleTerminal
-lua <<EOF
-require("toggleterm").setup{
-size =20,
-shade_terminals = true,
-persist_size = true,
-persist_mode = true, -- if set to true (default) the previous terminal mode will be remembered
-direction = 'float',
-close_on_exit = true, -- close the terminal window when the process exits
-float_opts = {
-    border = 'single', 
-  }
-}
-EOF
-autocmd TermEnter term://*toggleterm#*
-      \ tnoremap <silent><c-t> <Cmd>exe v:count1 . "ToggleTerm"<CR>
-nnoremap <silent><c-t> <Cmd>exe v:count1 . "ToggleTerm"<CR>
-inoremap <silent><c-t> <Esc><Cmd>exe v:count1 . "ToggleTerm"<CR>
-
-
-
-"==================================
-" Auto Pairs
 lua << EOF
-require("nvim-autopairs").setup {}
+  require("nvim-autopairs").setup {}
+
+  require('telescope').setup({ defaults = {file_ignore_patterns = {"node_modules/*"},}})
+
+  require("nvim-tree").setup({
+    view = {
+    width = 25,
+    mappings = {
+          list = {
+            { key = "r", action = "refresh" },
+          },
+        },
+      },
+    })
 EOF
 
-
-
 "==================================
-"LUALINE
-lua << END
-require('lualine').setup()
-END
 
-"==================================
-"Tabline
-nmap <Tab> :bnext<Return>
-nmap <S-Tab> :bprev<Return>
-nmap <C-x> :bw<Return>
-
-
-lua << END
-require('tabline').setup()
-END
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+                    	          \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
