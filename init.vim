@@ -2,19 +2,15 @@ syntax enable filetype indent on
 set number
 set relativenumber
 set numberwidth=3
-" set mouse=a
 set termguicolors
-set t_Co=256
 set linebreak
 set autoindent
 set breakindent
 set tabstop=4
-set shiftwidth=4
 set expandtab
 set nobackup
 set nowritebackup
 set signcolumn=yes
-set foldcolumn=1
 set cursorline
 set clipboard-=autoselect
 
@@ -40,15 +36,15 @@ runtime ./maps.vim
 "General
 "==================================
 let g:python_highlight_all = 1
-" let g:buffet_always_show_tabline = 0
 
-let g:gruvbox_material_transparent_background = 1
-let g:gruvbox_material_enable_bold = 1
-let g:gruvbox_material_better_performance = 1
-colorscheme gruvbox-material 
+colorscheme OceanicNext
+
+hi Normal guibg=NONE ctermbg=NONE
+hi LineNr guibg=NONE ctermbg=NONE
+hi SignColumn guibg=NONE ctermbg=NONE
+hi EndOfBuffer guibg=NONE ctermbg=NONE
 
 
-" let g:ale_sign_column_always = 1
 let g:ale_sign_error = ""
 let g:ale_sign_info = ""
 let g:ale_sign_warning = ""
@@ -58,7 +54,6 @@ let g:ale_echo_msg_warning_str = 'W'
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 
 
-let g:clang_library_path='/usr/lib/llvm-3.8/lib'
 
 "==================================
 lua << EOF
