@@ -4,10 +4,6 @@ call plug#begin()
 
 " Color Scheme
 Plug 'sainnhe/gruvbox-material'
-Plug 'lifepillar/vim-solarized8'
-Plug 'Rigellute/rigel'
-Plug 'adrian5/oceanic-next-vim'
-Plug 'AhmedAbdulrahman/aylin.vim'
 
 " Essentials
 Plug 'nvim-telescope/telescope.nvim'
