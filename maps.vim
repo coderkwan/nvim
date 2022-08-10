@@ -1,8 +1,8 @@
 "Genera
 "==================================
 inoremap jk <Esc>
-nnoremap <F2> :w<CR>
-nnoremap <F3> :q<CR>
+nnoremap <F2> :q<CR>
+nnoremap <F3> :w<CR>
 nnoremap <F4> :so %<CR>
 nnoremap <F5> :PlugInstall<CR>
 nnoremap <F7> :PlugClean<CR>

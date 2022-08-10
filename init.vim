@@ -2,7 +2,7 @@ syntax enable filetype indent on
 set number
 set relativenumber
 set numberwidth=3
-set mouse=a
+" set mouse=a
 set termguicolors
 set t_Co=256
 set linebreak
@@ -40,15 +40,15 @@ runtime ./maps.vim
 "General
 "==================================
 let g:python_highlight_all = 1
-let g:buffet_always_show_tabline = 0
+" let g:buffet_always_show_tabline = 0
 
-let g:gruvbox_material_transparent_background = 0
+let g:gruvbox_material_transparent_background = 1
 let g:gruvbox_material_enable_bold = 1
 let g:gruvbox_material_better_performance = 1
-colorscheme gruvbox-material
+colorscheme gruvbox-material 
 
 
-let g:ale_sign_column_always = 1
+" let g:ale_sign_column_always = 1
 let g:ale_sign_error = ""
 let g:ale_sign_info = ""
 let g:ale_sign_warning = ""
@@ -80,5 +80,3 @@ EOF
 
 "==================================
 
-inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
-                    	          \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
