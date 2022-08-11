@@ -3,7 +3,6 @@
 call plug#begin()
 
 " Color Scheme
-Plug 'sainnhe/gruvbox-material'
 Plug 'mhartington/oceanic-next' 
 
 " Essentials
@@ -15,7 +14,8 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'windwp/nvim-autopairs'
 
 " Linting
-Plug 'dense-analysis/ale'
+" Plug 'dense-analysis/ale'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 "Syntax highlight
 Plug 'yuezk/vim-js'
