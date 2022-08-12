@@ -44,6 +44,10 @@ runtime ./maps.vim
 "General
 "==================================
 
+" Disabling coc in some files
+autocmd BufNew,BufEnter *.jsx,*.tsx,*.html,*.css,*.scss execute "silent! CocEnable"
+autocmd BufNew,BufEnter *.js,*.ts,*.py,*.c,*.cpp,*.json,*.vim execute "silent! CocDisable"
+
 let g:python_highlight_all = 1
 
 " let g:ale_sign_error = ""
