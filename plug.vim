@@ -15,7 +15,7 @@ Plug 'windwp/nvim-autopairs'
 
 " Linting
 " Plug 'dense-analysis/ale'
-" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 "Syntax highlight
 Plug 'yuezk/vim-js'
