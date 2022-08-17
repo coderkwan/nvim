@@ -45,8 +45,8 @@ runtime ./maps.vim
 "==================================
 
 " Disabling coc in some files
-autocmd BufNew,BufEnter *.jsx,*.tsx,*.html,*.css,*.scss execute "silent! CocEnable"
-autocmd BufNew,BufEnter *.js,*.ts,*.py,*.c,*.cpp,*.json,*.vim execute "silent! CocDisable"
+" autocmd BufNew,BufEnter *.jsx,*.tsx,*.html,*.css,*.scss execute "silent! CocEnable"
+" autocmd BufNew,BufEnter *.js,*.ts,*.py,*.c,*.cpp,*.json,*.vim execute "silent! CocDisable"
 
 let g:python_highlight_all = 1
 
@@ -87,7 +87,7 @@ EOF
 
 "==================================
 
-inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+" inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
                     	          \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 
