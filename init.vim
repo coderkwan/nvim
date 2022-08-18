@@ -2,14 +2,14 @@ filetype plugin indent on
 syntax on 
 set number
 set relativenumber
-set numberwidth=3
+set numberwidth=2
 set termguicolors
 set t_Co=256
 set linebreak
 set autoindent
 set breakindent
-set tabstop=3
-set shiftwidth=3
+set tabstop=4
+set shiftwidth=4
 set expandtab
 set nobackup
 set nowritebackup
@@ -44,19 +44,15 @@ runtime ./maps.vim
 "General
 "==================================
 
-" Disabling coc in some files
-" autocmd BufNew,BufEnter *.jsx,*.tsx,*.html,*.css,*.scss execute "silent! CocEnable"
-" autocmd BufNew,BufEnter *.js,*.ts,*.py,*.c,*.cpp,*.json,*.vim execute "silent! CocDisable"
-
 let g:python_highlight_all = 1
 
-" let g:ale_sign_error = ""
-" let g:ale_sign_info = ""
-" let g:ale_sign_warning = ""
-" let g:ale_echo_msg_error_str = 'E'
-" let g:ale_echo_msg_info_str = 'I'
-" let g:ale_echo_msg_warning_str = 'W'
-" let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+autocmd BufWritePre *.js,*.jsx,*.ts,*.tsx,*.css,*.scss,*.json,*.graphql,*.md,*.yaml,*.html PrettierAsync
+
+let g:closetag_filetypes = 'html,javascriptreact'
+let g:closetag_enable_react_fragment = 1
+
+let g:prettier#autoformat = 1
+let g:prettier#autoformat_require_pragma = 0
 
 colorscheme OceanicNext
 
@@ -87,7 +83,7 @@ EOF
 
 "==================================
 
-inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+" inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
                     	          \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 
