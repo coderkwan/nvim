@@ -1,8 +1,7 @@
 filetype plugin indent on
 syntax on 
-set number
+set nu
 set relativenumber
-set numberwidth=2
 set termguicolors
 set t_Co=256
 set linebreak
@@ -11,11 +10,12 @@ set breakindent
 set tabstop=4
 set shiftwidth=4
 set expandtab
-set nobackup
-set nowritebackup
 set signcolumn=yes
 set cursorline
 set clipboard-=autoselect
+set nobackup
+set nowritebackup
+set updatetime=300
 
 "Disable Error highlight
 au ColorScheme * hi Error NONE
@@ -46,20 +46,21 @@ runtime ./maps.vim
 
 let g:python_highlight_all = 1
 
-autocmd BufWritePre *.js,*.jsx,*.ts,*.tsx,*.css,*.scss,*.json,*.graphql,*.md,*.yaml,*.html PrettierAsync
+" autocmd BufWritePre *.js,*.jsx,*.ts,*.tsx,*.css,*.scss,*.json,*.graphql,*.md,*.yaml,*.html PrettierAsync
 
-let g:closetag_filetypes = 'html,javascriptreact'
-let g:closetag_enable_react_fragment = 1
+" let g:closetag_filetypes = 'html,javascriptreact'
+" let g:closetag_enable_react_fragment = 1
 
-let g:prettier#autoformat = 1
-let g:prettier#autoformat_require_pragma = 0
+" let g:prettier#autoformat = 1
+" let g:prettier#autoformat_require_pragma = 0
 
 colorscheme OceanicNext
 
-hi Normal guibg=NONE ctermbg=NONE
-hi LineNr guibg=NONE ctermbg=NONE
-hi SignColumn guibg=NONE ctermbg=NONE
-hi EndOfBuffer guibg=NONE ctermbg=NONE
+" Transparent bg
+" hi Normal guibg=NONE ctermbg=NONE
+" hi LineNr guibg=NONE ctermbg=NONE
+" hi SignColumn guibg=NONE ctermbg=NONE
+" hi EndOfBuffer guibg=NONE ctermbg=NONE
 
 
 "==================================
@@ -83,7 +84,29 @@ EOF
 
 "==================================
 
-" inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+
+" COC
+
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
                     	          \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
+" GoTo code navigation.
+nmap <silent> gd <Plug>(coc-definition)
+" nmap <silent> gy <Plug>(coc-type-definition)
+" nmap <silent> gi <Plug>(coc-implementation)
+" nmap <silent> gr <Plug>(coc-references)
+
+" Use K to show documentation in preview window.
+nnoremap <silent> K :call ShowDocumentation()<CR>
+
+function! ShowDocumentation()
+  if CocAction('hasProvider', 'hover')
+    call CocActionAsync('doHover')
+  else
+    call feedkeys('K', 'in')
+  endif
+endfunction
+
+" Highlight the symbol and its references when holding the cursor.
+autocmd CursorHold * silent call CocActionAsync('highlight')
 
