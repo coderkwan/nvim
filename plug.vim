@@ -14,14 +14,8 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'windwp/nvim-autopairs'
 
 " Linting
-" Plug 'dense-analysis/ale'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'alvan/vim-closetag'
 Plug 'AndrewRadev/tagalong.vim'
-Plug 'prettier/vim-prettier', {
-  \ 'do': 'yarn install --frozen-lockfile --production',
-  \ 'branch': 'release/0.x'
-  \ }
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 "Syntax highlight
 Plug 'yuezk/vim-js'
