@@ -12,6 +12,8 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'tpope/vim-commentary'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'windwp/nvim-autopairs'
+Plug 'nvim-lualine/lualine.nvim'
+Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 
 " Linting
 Plug 'AndrewRadev/tagalong.vim'

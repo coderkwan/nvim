@@ -3,12 +3,11 @@ syntax on
 set nu
 set relativenumber
 set termguicolors
-"set t_Co=256
 set linebreak
 set autoindent
 set breakindent
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 set expandtab
 set signcolumn=yes
 set cursorline
@@ -17,16 +16,6 @@ set nobackup
 set nowritebackup
 set updatetime=300
 set cmdheight=2
-
-
-"Disable Error highlight
-au ColorScheme * hi Error NONE
-au ColorScheme * hi ErrorMsg NONE
-au GuiEnter * hi Error NONE
-au GuiEnter * hi ErrorMsg NONE
-
-"==================================
-
 
 
 "Imports
@@ -43,6 +32,11 @@ let g:python_highlight_all = 1
 
 colorscheme OceanicNext
 
+hi Normal guibg=NONE ctermbg=NONE
+hi LineNr guibg=NONE ctermbg=NONE
+hi SignColumn guibg=NONE ctermbg=NONE
+hi EndOfBuffer guibg=NONE ctermbg=NONE
+
 
 "==================================
 lua << EOF
@@ -50,9 +44,17 @@ lua << EOF
 
   require('telescope').setup({ defaults = {file_ignore_patterns = {"node_modules/*"},}})
 
+  require('lualine').setup({
+       sections = {
+         lualine_x = { 'fileformat', 'filetype'}
+       }
+  })
+
+  require("bufferline").setup{}
+
   require("nvim-tree").setup({
     view = {
-    width = 25,
+    width = 24,
     mappings = {
           list = {
             { key = "r", action = "refresh" },
