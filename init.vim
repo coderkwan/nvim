@@ -6,8 +6,8 @@ set termguicolors
 set linebreak
 set autoindent
 set breakindent
-set tabstop=2
-set shiftwidth=2
+set tabstop=4
+set shiftwidth=4
 set expandtab
 set signcolumn=yes
 set cursorline
@@ -24,18 +24,17 @@ runtime ./plug.vim
 runtime ./maps.vim
 
 
-
 "General
 "==================================
 
 let g:python_highlight_all = 1
 
-colorscheme OceanicNext
+colorscheme nightfox
 
-hi Normal guibg=NONE ctermbg=NONE
-hi LineNr guibg=NONE ctermbg=NONE
-hi SignColumn guibg=NONE ctermbg=NONE
-hi EndOfBuffer guibg=NONE ctermbg=NONE
+" hi Normal guibg=NONE ctermbg=NONE
+" hi LineNr guibg=NONE ctermbg=NONE
+" hi SignColumn guibg=NONE ctermbg=NONE
+" hi EndOfBuffer guibg=NONE ctermbg=NONE
 
 
 "==================================
@@ -49,8 +48,11 @@ lua << EOF
          lualine_x = { 'fileformat', 'filetype'}
        }
   })
+  
+  require('nvim-treesitter.configs').setup({
+    ensure_installed = { 'c','javascript', 'typescript', 'json', 'python', 'html', 'css', 'bash', 'cpp', 'php', 'regex', 'scss', 'sql', 'tsx', 'vim', 'yaml','markdown'}
+  })
 
-  require("bufferline").setup{}
 
   require("nvim-tree").setup({
     view = {

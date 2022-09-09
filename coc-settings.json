@@ -1,92 +1,94 @@
 {
-    "tsserver.enableJavascript": true,
-    "diagnostic.errorSign": "",
-    "diagnostic.warningSign": "",
-    "diagnostic.hintSign": "",
-    "diagnostic.infoSign": "",
-    "diagnostic.checkCurrentLine": false,
-    "diagnostic.level": "hint",
-    "diagnostic.autoRefresh": true,
-    "diagnostic.refreshOnInsertMode": false,
-    "diagnostic.locationlistUpdate": true,
-    "diagnostic.virtualText": false,
-    "diagnostic.signPriority": 50,
-    "diagnostic.enableHighlightLineNumber": true,
-    "diagnostic.messageTarget": "float",
-    "diagnostic.separateRelatedInformationAsDiagnostics": true,
-    "suggest.floatConfig": {
-        "border": true,
-        "rounded": true,
-        "borderhighlight": "FloatBorder",
-        "highlight": "CocSuggestFloating"
-    },
-    "diagnostic.floatConfig": {
-        "border": true,
-        "rounded": true,
-        "borderhighlight": "FloatBorder",
-        "highlight": "CocFloating",
-        "maxWidth": 120,
-        "focusable": true
-    },
-    "hover.floatConfig": {
-        "border": true,
-        "rounded": true,
-        "borderhighlight": "SpellCap",
-        "highlight": "CocFloating",
-        "maxWidth": 120,
-        "focusable": true
-    },
-    "signature.floatConfig": {
-        "border": true,
-        "rounded": true,
-        "borderhighlight": "Normal",
-        "highlight": "CocFloating",
-        "maxWidth": 120,
-        "focusable": true
-    },
-    "dialog.floatBorderHighlight": "Normal",
-    "dialog.rounded": true,
-    "notification.border": true,
-    "python.formatting.autopep8Path": "/home/kwa/.local/bin/autopep8",
-    "coc.preferences.formatOnSaveFiletypes": [
-        "python",
-        "javascript",
-        "typescript",
-        "typescriptreact",
-        "javascriptreact",
-        "c",
-        "cpp",
-        "html",
-        "css",
-        "scss",
-        "json"
-    ],
-    "suggest.completionItemKindLabels": {
-        "default": "",
-        "text": "", // 
-        "method": "", // 
-        "function": "", // ƒ
-        "constructor": "", // 
-        "field": "", // 料  
-        "variable": "", //  
-        "class": "", // ﴯ 
-        "interface": "", // 
-        "module": "", // 
-        "property": "", // ﰠ
-        "unit": "", //  塞
-        "value": "",
-        "enum": "", // 
-        "keyword": "", // 
-        "snippet": "", //    
-        "color": "",
-        "file": "", // 
-        "reference": "", //  渚
-        "folder": "", // 
-        "enumMember": "", // 
-        "constant": "", // 
-        "struct": "פּ", // 
-        "event": "", // 鬒
-        "operator": "Ψ", // 
-        "typeParameter": "<>" //   
-    }
+  "tsserver.enableJavascript": true,
+  "intelephense.format.braces": "k&r",
+  "diagnostic.errorSign": "",
+  "diagnostic.warningSign": "",
+  "diagnostic.hintSign": "",
+  "diagnostic.infoSign": "",
+  "diagnostic.checkCurrentLine": false,
+  "diagnostic.level": "hint",
+  "diagnostic.autoRefresh": true,
+  "diagnostic.refreshOnInsertMode": false,
+  "diagnostic.locationlistUpdate": true,
+  "diagnostic.virtualText": false,
+  "diagnostic.signPriority": 50,
+  "diagnostic.enableHighlightLineNumber": true,
+  "diagnostic.messageTarget": "float",
+  "diagnostic.separateRelatedInformationAsDiagnostics": true,
+  "suggest.floatConfig": {
+    "border": true,
+    "rounded": true,
+    "borderhighlight": "FloatBorder",
+    "highlight": "CocSuggestFloating"
+  },
+  "diagnostic.floatConfig": {
+    "border": true,
+    "rounded": true,
+    "borderhighlight": "FloatBorder",
+    "highlight": "CocFloating",
+    "maxWidth": 120,
+    "focusable": true
+  },
+  "hover.floatConfig": {
+    "border": true,
+    "rounded": true,
+    "borderhighlight": "SpellCap",
+    "highlight": "CocFloating",
+    "maxWidth": 120,
+    "focusable": true
+  },
+  "signature.floatConfig": {
+    "border": true,
+    "rounded": true,
+    "borderhighlight": "Normal",
+    "highlight": "CocFloating",
+    "maxWidth": 120,
+    "focusable": true
+  },
+  "dialog.floatBorderHighlight": "Normal",
+  "dialog.rounded": true,
+  "notification.border": true,
+  "python.formatting.autopep8Path": "/home/kwa/.local/bin/autopep8",
+  "coc.preferences.formatOnSaveFiletypes": [
+    "python",
+    "javascript",
+    "typescript",
+    "typescriptreact",
+    "javascriptreact",
+    "c",
+    "cpp",
+    "php",
+    "html",
+    "css",
+    "scss",
+    "json"
+  ],
+  "suggest.completionItemKindLabels": {
+    "default": "",
+    "text": "", // 
+    "method": "", // 
+    "function": "", // ƒ
+    "constructor": "", // 
+    "field": "", // 料  
+    "variable": "", //  
+    "class": "", // ﴯ 
+    "interface": "", // 
+    "module": "", // 
+    "property": "", // ﰠ
+    "unit": "", //  塞
+    "value": "",
+    "enum": "", // 
+    "keyword": "", // 
+    "snippet": "", //    
+    "color": "",
+    "file": "", // 
+    "reference": "", //  渚
+    "folder": "", // 
+    "enumMember": "", // 
+    "constant": "", // 
+    "struct": "פּ", // 
+    "event": "", // 鬒
+    "operator": "Ψ", // 
+    "typeParameter": "<>" //   
+  }
 }
