@@ -15,7 +15,6 @@ set clipboard-=autoselect
 set nobackup
 set nowritebackup
 set updatetime=300
-set cmdheight=2
 
 
 "Imports
@@ -43,16 +42,20 @@ lua << EOF
 
   require('telescope').setup({ defaults = {file_ignore_patterns = {"node_modules/*"},}})
 
-  require('lualine').setup({
-       sections = {
-         lualine_x = { 'fileformat', 'filetype'}
-       }
-  })
-  
   require('nvim-treesitter.configs').setup({
     ensure_installed = { 'c','javascript', 'typescript', 'json', 'python', 'html', 'css', 'bash', 'cpp', 'php', 'regex', 'scss', 'sql', 'tsx', 'vim', 'yaml','markdown'}
   })
 
+  require('lualine').setup({
+       options = {
+            component_separators = { left = '', right = ''},
+            section_separators = { left = '', right = ''},
+       },
+       sections = {
+            lualine_b = {'branch'},
+            lualine_x = {'fileformat', 'filetype'},
+       }
+   })
 
   require("nvim-tree").setup({
     view = {

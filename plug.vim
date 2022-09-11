@@ -3,7 +3,7 @@
 call plug#begin()
 
 " Color Scheme
-Plug 'EdenEast/nightfox.nvim' " Vim-Plug
+Plug 'EdenEast/nightfox.nvim' 
 Plug 'mhartington/oceanic-next' 
 
 " Essentials
@@ -14,7 +14,7 @@ Plug 'tpope/vim-commentary'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'windwp/nvim-autopairs'
 Plug 'nvim-lualine/lualine.nvim'
-Plug 'ap/vim-buftabline'
+" Plug 'ap/vim-buftabline'
 
 " Linting
 Plug 'AndrewRadev/tagalong.vim'
