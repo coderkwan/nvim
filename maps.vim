@@ -21,6 +21,7 @@ nnoremap <C-n> :NvimTreeToggle<CR>
 "==================================
 " Telescope
 nnoremap <C-l> :Telescope find_files<CR>
+nnoremap <C-k> :Telescope buffers<CR>
 
 "==================================
 "Tabline

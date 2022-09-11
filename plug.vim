@@ -14,7 +14,7 @@ Plug 'tpope/vim-commentary'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'windwp/nvim-autopairs'
 Plug 'nvim-lualine/lualine.nvim'
-" Plug 'ap/vim-buftabline'
+Plug 'ap/vim-buftabline'
 
 " Linting
 Plug 'AndrewRadev/tagalong.vim'
