@@ -5,6 +5,7 @@ call plug#begin()
 " Color Scheme
 Plug 'EdenEast/nightfox.nvim' 
 Plug 'mhartington/oceanic-next' 
+Plug 'sainnhe/gruvbox-material' 
 
 " Essentials
 Plug 'nvim-telescope/telescope.nvim'

@@ -28,7 +28,7 @@ runtime ./maps.vim
 
 let g:python_highlight_all = 1
 
-colorscheme nightfox
+colorscheme gruvbox-material
 
 " hi Normal guibg=NONE ctermbg=NONE
 " hi LineNr guibg=NONE ctermbg=NONE

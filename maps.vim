@@ -17,6 +17,7 @@ nmap <silent> gr <Plug>(coc-references)
 " ======================================
 " NvimTree
 nnoremap <C-n> :NvimTreeToggle<CR>
+nnoremap <C-b> :NvimTreeFocus<CR>
 
 "==================================
 " Telescope
