@@ -6,6 +6,7 @@ call plug#begin()
 Plug 'EdenEast/nightfox.nvim' 
 Plug 'mhartington/oceanic-next' 
 Plug 'sainnhe/gruvbox-material' 
+Plug 'folke/tokyonight.nvim' 
 
 " Essentials
 Plug 'nvim-telescope/telescope.nvim'
@@ -20,6 +21,7 @@ Plug 'ap/vim-buftabline'
 " Linting
 Plug 'AndrewRadev/tagalong.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'lervag/vimtex'
 
 "Syntax highlight
 Plug 'maxmellon/vim-jsx-pretty'
