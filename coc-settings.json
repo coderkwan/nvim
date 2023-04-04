@@ -48,7 +48,8 @@
     "dialog.floatBorderHighlight": "Normal",
     "dialog.rounded": true,
     "notification.border": true,
-    "python.formatting.autopep8Path": "/home/kwa/.local/bin/autopep8",
+
+    "python.formatting.autopep8Path": "/home/daniel/.local/bin/autopep8",
     "coc.preferences.formatOnSaveFiletypes": [
         "javascript",
         "typescript",

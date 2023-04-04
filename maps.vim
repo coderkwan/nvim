@@ -7,6 +7,7 @@ nnoremap <F4> :so %<CR>
 nnoremap <F5> :PlugInstall<CR>
 nnoremap <F7> :PlugClean<CR>
 nnoremap <F6> :noh<CR>
+nnoremap <C-s> :setlocal spell spelllang=en_us<CR>
 
 
 

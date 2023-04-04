@@ -7,6 +7,9 @@ Plug 'EdenEast/nightfox.nvim'
 Plug 'mhartington/oceanic-next' 
 Plug 'sainnhe/gruvbox-material' 
 Plug 'folke/tokyonight.nvim' 
+Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
+Plug 'getomni/neovim', { 'branch': 'main' }
+Plug 'fenetikm/falcon'
 
 " Essentials
 Plug 'nvim-telescope/telescope.nvim'

@@ -27,11 +27,13 @@ runtime ./maps.vim
 
 let g:python_highlight_all = 1
 
-colorscheme gruvbox-material
+colorscheme nightfox
 
 
-" hi Normal guibg=NONE ctermbg=NONE hi LineNr guibg=NONE ctermbg=NONE hi
-" SignColumn guibg=NONE ctermbg=NONE hi EndOfBuffer guibg=NONE ctermbg=NONE
+hi Normal guibg=NONE ctermbg=NONE 
+hi LineNr guibg=NONE ctermbg=NONE 
+hi SignColumn guibg=NONE ctermbg=NONE 
+hi EndOfBuffer guibg=NONE ctermbg=NONE
 
 
 "================================== Latex
