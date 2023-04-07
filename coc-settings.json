@@ -73,6 +73,10 @@
                     "directory": "/tmp/ccls"
                 }
             }
+        },
+        "latex": {
+            "command": "/usr/bin/texlab",
+            "filetypes": ["tex", "bib", "plaintex", "context"]
         }
     },
     "suggest.completionItemKindLabels": {

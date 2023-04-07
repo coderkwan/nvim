@@ -27,7 +27,9 @@ runtime ./maps.vim
 
 let g:python_highlight_all = 1
 
-colorscheme nightfox
+colorscheme gruvbox-material
+
+
 
 
 hi Normal guibg=NONE ctermbg=NONE 
@@ -66,8 +68,9 @@ lua << EOF
   require('nvim-treesitter.configs').setup({
     ensure_installed = { 'c','javascript', 'typescript', 'json', 'python', 'html', 'css', 'bash', 'cpp', 'php', 'regex', 'scss', 'sql', 'tsx', 'vim', 'yaml','markdown'}
   })
+  
 
-  require('lualine').setup({
+require('lualine').setup({
        options = {
             component_separators = { left = '', right = ''},
             section_separators = { left = '', right = ''},
@@ -77,6 +80,7 @@ lua << EOF
             lualine_x = {'fileformat', 'filetype'},
        }
    })
+
 
   require("nvim-tree").setup({
     view = {
