@@ -3,7 +3,7 @@
 call plug#begin()
 
 " Color Scheme
-Plug 'sainnhe/gruvbox-material'
+Plug 'davidosomething/vim-colors-meh'
 
 " Essentials
 Plug 'nvim-telescope/telescope.nvim'
@@ -17,11 +17,14 @@ Plug 'ap/vim-buftabline'
 
 " Linting
 Plug 'AndrewRadev/tagalong.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" post install (yarn install | npm install) then load plugin only for editing supported files
+Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 Plug 'lervag/vimtex'
 
 "Syntax highlight
 Plug 'maxmellon/vim-jsx-pretty'
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+" Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'lukas-reineke/indent-blankline.nvim'
 
 call plug#end()
