@@ -17,6 +17,12 @@ set nowritebackup
 set updatetime=300 
 " setlocal spell spelllang=en_us
 
+let g:netrw_liststyle = 3
+let g:netrw_banner = 0
+let g:netrw_browse_split = 4
+let g:netrw_altv = 1
+let g:netrw_winsize = 15
+
 
 "Imports ==================================
 runtime ./plug.vim 
@@ -25,8 +31,8 @@ runtime ./maps.vim
 "General ==================================
 
 let g:python_highlight_all = 1
+let g:closetag_filetypes = 'html,xhtml,phtml,javascriptreact,typescriptreact'
 
-" autocmd BufWritePre *.js,*.jsx,*.ts,*.tsx,*.css,*.scss,*.json,*.md,*.yaml,*.html Prettier
 
 colorscheme meh
 
@@ -38,7 +44,6 @@ colorscheme meh
 "==================================
 lua << EOF
   require("nvim-autopairs").setup {}
-  require("nvim-tree").setup {}
   require('telescope').setup({ defaults = {file_ignore_patterns = {"node_modules/*"},}})
 EOF
 
