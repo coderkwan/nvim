@@ -9,14 +9,13 @@ nnoremap <F7> :PlugClean<CR>
 nnoremap <F6> :noh<CR>
 nnoremap <C-s> :setlocal spell spelllang=en_us<CR>
 
-
-
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gr <Plug>(coc-references)
 
 " ======================================
-nnoremap <C-n> :Vexplore<CR>
+nnoremap <C-b> :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTreeToggle<CR>
 
 "==================================
 " Telescope

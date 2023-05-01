@@ -1,6 +1,4 @@
 {
-    "tsserver.enableJavascript": true,
-    "intelephense.format.braces": "k&r",
     "diagnostic.errorSign": "",
     "diagnostic.warningSign": "",
     "diagnostic.hintSign": "",
@@ -49,19 +47,7 @@
     "dialog.rounded": true,
     "notification.border": true,
 
-    "python.formatting.autopep8Path": "/home/daniel/.local/bin/autopep8",
-    "coc.preferences.formatOnSaveFiletypes": [
-        "javascript",
-        "typescript",
-        "typescriptreact",
-        "javascriptreact",
-        "tex",
-        "php",
-        "html",
-        "css",
-        "scss",
-        "json"
-    ],
+    "coc.preferences.formatOnSave": true,
     "prettier.tabWidth": 4,
     "languageserver": {
         "ccls": {
