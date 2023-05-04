@@ -14,13 +14,13 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gr <Plug>(coc-references)
 
 " ======================================
-nnoremap <C-b> :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTreeToggle<CR>
+" nnoremap <C-b> :NERDTreeFocus<CR>
+" nnoremap <C-n> :NERDTreeToggle<CR>
 
 "==================================
 " Telescope
-nnoremap <C-l> :Telescope find_files<CR>
-nnoremap <C-k> :Telescope buffers<CR>
+nnoremap <C-l> :Files <CR>
+nnoremap <C-b> :Buffers <CR>
 
 "==================================
 "Tabline

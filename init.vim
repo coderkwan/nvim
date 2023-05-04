@@ -23,12 +23,22 @@ runtime ./maps.vim
 
 let g:python_highlight_all = 1
 let g:closetag_filetypes = 'html,xhtml,phtml,javascriptreact,typescriptreact'
+let $FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git \) -prune -o -print'
+
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<ESC>O
+inoremap {;<CR> {<CR>};<ESC>O
 
 colorscheme meh
-
+hi Normal guibg=NONE ctermbg=NONE
+hi LineNr guibg=NONE ctermbg=NONE
+hi EndOfBuffer guibg=NONE ctermbg=NONE
 "==================================
 lua << EOF
-    require("nvim-autopairs").setup {}
     require("lualine").setup ({
         options = {
             component_separators = { left = '', right = ''},
@@ -39,9 +49,6 @@ lua << EOF
             lualine_x = {'fileformat', 'filetype'},
         }
    })
-    require('telescope').setup({ 
-        defaults = {file_ignore_patterns = {"node_modules/*"},}
-    })
 EOF
 
 "auto select first item on coc list==================================
