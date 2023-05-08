@@ -21,17 +21,8 @@ runtime ./maps.vim
 
 "General ==================================
 
-let g:python_highlight_all = 1
-let g:closetag_filetypes = 'html,xhtml,phtml,javascriptreact,typescriptreact'
 let $FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git \) -prune -o -print'
 
-inoremap " ""<left>
-inoremap ' ''<left>
-inoremap ( ()<left>
-inoremap [ []<left>
-inoremap { {}<left>
-inoremap {<CR> {<CR>}<ESC>O
-inoremap {;<CR> {<CR>};<ESC>O
 
 colorscheme meh
 hi Normal guibg=NONE ctermbg=NONE

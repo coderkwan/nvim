@@ -1,16 +1,4 @@
 {
-    "diagnostic.errorSign": "",
-    "diagnostic.warningSign": "",
-    "diagnostic.hintSign": "",
-    "diagnostic.infoSign": "",
-    "diagnostic.checkCurrentLine": false,
-    "diagnostic.level": "hint",
-    "diagnostic.autoRefresh": true,
-    "diagnostic.refreshOnInsertMode": false,
-    "diagnostic.locationlistUpdate": true,
-    "diagnostic.virtualText": false,
-    "diagnostic.signPriority": 50,
-    "diagnostic.enableHighlightLineNumber": true,
     "diagnostic.messageTarget": "float",
     "diagnostic.separateRelatedInformationAsDiagnostics": true,
     "suggest.floatConfig": {
@@ -49,48 +37,5 @@
 
     "coc.preferences.formatOnSave": true,
     "prettier.tabWidth": 4,
-    "languageserver": {
-        "ccls": {
-            "command": "ccls",
-            "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"],
-            "rootPatterns": [".ccls", "compile_commands.json", ".git/", ".hg/"],
-            "initializationOptions": {
-                "cache": {
-                    "directory": "/tmp/ccls"
-                }
-            }
-        },
-        "latex": {
-            "command": "/usr/bin/texlab",
-            "filetypes": ["tex", "bib", "plaintex", "context"]
-        }
-    },
-    "suggest.completionItemKindLabels": {
-        "default": "",
-        "text": "", // 
-        "method": "", // 
-        "function": "", // ƒ
-        "constructor": "", // 
-        "field": "", // 料  
-        "variable": "", //  
-        "class": "", // ﴯ 
-        "interface": "", // 
-        "module": "", // 
-        "property": "", // ﰠ
-        "unit": "", //  塞
-        "value": "",
-        "enum": "", // 
-        "keyword": "", // 
-        "snippet": "", //    
-        "color": "",
-        "file": "", // 
-        "reference": "", //  渚
-        "folder": "", // 
-        "enumMember": "", // 
-        "constant": "", // 
-        "struct": "פּ", // 
-        "event": "", // 鬒
-        "operator": "Ψ", // 
-        "typeParameter": "<>" //   
-    }
+    "languageserver": {}
 }
