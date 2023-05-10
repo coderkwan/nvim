@@ -1,20 +1,13 @@
 call plug#begin()
-"+++++ Color Scheme
-Plug 'davidosomething/vim-colors-meh'
-"+++++ Essentials
-Plug 'nvim-lua/plenary.nvim'
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 Plug 'tpope/vim-commentary'
-Plug 'kyazdani42/nvim-web-devicons'
-Plug 'ryanoasis/vim-devicons'
 Plug 'townk/vim-autoclose'
-Plug 'nvim-lualine/lualine.nvim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-"++++++ Linting
 Plug 'AndrewRadev/tagalong.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-"++++++Syntax 
+Plug 'nmac427/guess-indent.nvim'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()

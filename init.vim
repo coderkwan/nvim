@@ -4,6 +4,7 @@ set relativenumber
 set termguicolors
 set linebreak 
 set autoindent 
+filetype plugin indent on
 set breakindent 
 set tabstop=4 
 set shiftwidth=4 
@@ -24,25 +25,17 @@ runtime ./maps.vim
 let $FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git \) -prune -o -print'
 
 
-colorscheme meh
+colorscheme catppuccin-mocha
 hi Normal guibg=NONE ctermbg=NONE
 hi LineNr guibg=NONE ctermbg=NONE
+hi SignColumn guibg=NONE ctermbg=NONE
 hi EndOfBuffer guibg=NONE ctermbg=NONE
+
 "==================================
 lua << EOF
-    require("lualine").setup ({
-        options = {
-            component_separators = { left = '', right = ''},
-            section_separators = { left = '', right = ''},
-        },
-        sections = {
-            lualine_b = {'branch'},
-            lualine_x = {'fileformat', 'filetype'},
-        }
-   })
+
 EOF
 
-"auto select first item on coc list==================================
-inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
-\: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
