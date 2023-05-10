@@ -1,4 +1,43 @@
 {
     "prettier.tabWidth": 4,
-    "coc.preferences.formatOnSave": true
+    "coc.preferences.formatOnSave": true,
+    "diagnostic.messageTarget": "float",
+    "diagnostic.separateRelatedInformationAsDiagnostics": true,
+    "suggest.floatConfig": {
+        "border": true,
+        "rounded": true,
+        "borderhighlight": "FloatBorder",
+        "highlight": "CocSuggestFloating"
+    },
+    "diagnostic.floatConfig": {
+        "border": true,
+        "rounded": true,
+        "borderhighlight": "FloatBorder",
+        "highlight": "CocFloating",
+        "maxWidth": 120,
+        "focusable": true
+    },
+    "hover.floatConfig": {
+        "border": true,
+        "rounded": true,
+        "borderhighlight": "SpellCap",
+        "highlight": "CocFloating",
+        "maxWidth": 120,
+        "focusable": true
+    },
+    "signature.floatConfig": {
+        "border": true,
+        "rounded": true,
+        "borderhighlight": "Normal",
+        "highlight": "CocFloating",
+        "maxWidth": 120,
+        "focusable": true
+    },
+    "dialog.floatBorderHighlight": "Normal",
+    "dialog.rounded": true,
+    "notification.border": true,
+    "diagnostic.errorSign": "", //  ••
+    "diagnostic.warningSign": "", //  •
+    "diagnostic.hintSign": "♪", // •
+    "diagnostic.infoSign": "" // •
 }
