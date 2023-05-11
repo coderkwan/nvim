@@ -1,5 +1,5 @@
 call plug#begin()
-Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+Plug 'wojciechkepka/vim-github-dark'
 Plug 'tpope/vim-commentary'
 Plug 'townk/vim-autoclose'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
