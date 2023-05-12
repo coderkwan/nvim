@@ -53,6 +53,11 @@ require("indent_blankline").setup {
     },
 }
 
+require('bufferline').setup()
+
+require('nvim-treesitter').setup({
+  ensure_installed = { "javascript", "yaml","tsx", "html","json","scss", "typescript", "css", "lua", "vim", "vimdoc", "query" },
+})
 EOF
 
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()

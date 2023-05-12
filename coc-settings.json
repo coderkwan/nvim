@@ -1,8 +1,12 @@
 {
     "prettier.tabWidth": 4,
+    "prettier.bracketSameLine": true,
     "coc.preferences.formatOnSave": true,
     "diagnostic.messageTarget": "float",
     "diagnostic.separateRelatedInformationAsDiagnostics": true,
+    "floatFactory.floatConfig": {
+        "border": true
+    },
     "suggest.floatConfig": {
         "border": true,
         "rounded": true,
