@@ -24,9 +24,11 @@ runtime ./maps.vim
 
 let $FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git \) -prune -o -print'
 
+let g:gruvbox_material_foreground = 'material'
+let g:gruvbox_material_background = 'hard'
+
 colorscheme gruvbox-material
 
-let g:gruvbox_material_background = 'mix'
 
 " hi Normal guibg=NONE ctermbg=NONE
 " hi SignColumn guibg=NONE ctermbg=NONE
