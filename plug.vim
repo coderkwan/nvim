@@ -1,6 +1,6 @@
 call plug#begin()
 " colorscheme
-Plug 'wojciechkepka/vim-github-dark'
+Plug 'sainnhe/gruvbox-material'
 " bufferline
 Plug 'akinsho/bufferline.nvim'
 " glyphs/icons
