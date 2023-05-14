@@ -1,8 +1,12 @@
 call plug#begin()
 " colorscheme
 Plug 'sainnhe/gruvbox-material'
+" distruction free
+Plug 'junegunn/goyo.vim'
+" statusline
+Plug 'nvim-lualine/lualine.nvim'
 " bufferline
-Plug 'akinsho/bufferline.nvim'
+"Plug 'akinsho/bufferline.nvim'
 " glyphs/icons
 Plug 'kyazdani42/nvim-web-devicons'
 " comment/uncomment code with gcc

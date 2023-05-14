@@ -57,7 +57,15 @@ require("indent_blankline").setup {
     },
 }
 
-require('bufferline').setup()
+--require('bufferline').setup()
+
+require('lualine').setup({
+    options ={
+        component_separators = { left = '', right = ''},
+        section_separators = { left = '', right = ''},
+    }
+})
+
 
 require('nvim-treesitter').setup({
   ensure_installed = { "javascript", "yaml","tsx", "html","json","scss", "typescript", "css", "lua", "vim", "vimdoc", "query" },
