@@ -8,7 +8,8 @@ Plug 'kyazdani42/nvim-web-devicons'
 " comment/uncomment code with gcc
 Plug 'tpope/vim-commentary'
 " autoclose tags
-Plug 'townk/vim-autoclose'
+" Plug 'townk/vim-autoclose'
+Plug 'jiangmiao/auto-pairs'
 " fuzzy finder
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
@@ -25,3 +26,4 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} 
 
 call plug#end()
+
