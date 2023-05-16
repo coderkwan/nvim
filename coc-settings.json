@@ -43,5 +43,6 @@
     "diagnostic.errorSign": "", //  ••
     "diagnostic.warningSign": "", //  •
     "diagnostic.hintSign": "♪", // •
-    "diagnostic.infoSign": "" // •
+    "diagnostic.infoSign": "", // •
+    "intelephense.format.braces": "k&r"
 }

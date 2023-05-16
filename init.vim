@@ -29,6 +29,8 @@ let g:gruvbox_material_background = 'hard'
 
 colorscheme gruvbox-material
 
+au BufEnter,BufNew *.php :set filetype=html
+
 
 " hi Normal guibg=NONE ctermbg=NONE
 " hi SignColumn guibg=NONE ctermbg=NONE
