@@ -3,6 +3,8 @@ call plug#begin()
 Plug 'sainnhe/gruvbox-material'
 " distruction free
 Plug 'junegunn/goyo.vim'
+Plug 'preservim/nerdtree'
+Plug 'ryanoasis/vim-devicons'
 " statusline
 Plug 'nvim-lualine/lualine.nvim'
 " bufferline

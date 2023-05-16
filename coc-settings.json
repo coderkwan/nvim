@@ -1,48 +1,52 @@
 {
-    "prettier.tabWidth": 4,
-    "prettier.bracketSameLine": true,
-    "coc.preferences.formatOnSave": true,
-    "diagnostic.messageTarget": "float",
-    "diagnostic.separateRelatedInformationAsDiagnostics": true,
-    "floatFactory.floatConfig": {
-        "border": true
-    },
-    "suggest.floatConfig": {
-        "border": true,
-        "rounded": true,
-        "borderhighlight": "FloatBorder",
-        "highlight": "CocSuggestFloating"
-    },
-    "diagnostic.floatConfig": {
-        "border": true,
-        "rounded": true,
-        "borderhighlight": "FloatBorder",
-        "highlight": "CocFloating",
-        "maxWidth": 120,
-        "focusable": true
-    },
-    "hover.floatConfig": {
-        "border": true,
-        "rounded": true,
-        "borderhighlight": "SpellCap",
-        "highlight": "CocFloating",
-        "maxWidth": 120,
-        "focusable": true
-    },
-    "signature.floatConfig": {
-        "border": true,
-        "rounded": true,
-        "borderhighlight": "Normal",
-        "highlight": "CocFloating",
-        "maxWidth": 120,
-        "focusable": true
-    },
-    "dialog.floatBorderHighlight": "Normal",
-    "dialog.rounded": true,
-    "notification.border": true,
-    "diagnostic.errorSign": "", //  ••
-    "diagnostic.warningSign": "", //  •
-    "diagnostic.hintSign": "♪", // •
-    "diagnostic.infoSign": "", // •
-    "intelephense.format.braces": "k&r"
+  "prettier.tabWidth": 2,
+  "intelephense.path": "",
+  "prettier.printWidth": 80,
+  "prettier.bracketSameLine": true,
+  "coc.preferences.formatOnSave": true,
+  "diagnostic.messageTarget": "float",
+  "phpls.enable": true,
+  "intelephense.enable": false,
+  "diagnostic.separateRelatedInformationAsDiagnostics": true,
+  "floatFactory.floatConfig": {
+    "border": true
+  },
+  "suggest.floatConfig": {
+    "border": true,
+    "rounded": true,
+    "borderhighlight": "FloatBorder",
+    "highlight": "CocSuggestFloating"
+  },
+  "diagnostic.floatConfig": {
+    "border": true,
+    "rounded": true,
+    "borderhighlight": "FloatBorder",
+    "highlight": "CocFloating",
+    "maxWidth": 120,
+    "focusable": true
+  },
+  "hover.floatConfig": {
+    "border": true,
+    "rounded": true,
+    "borderhighlight": "SpellCap",
+    "highlight": "CocFloating",
+    "maxWidth": 120,
+    "focusable": true
+  },
+  "signature.floatConfig": {
+    "border": true,
+    "rounded": true,
+    "borderhighlight": "Normal",
+    "highlight": "CocFloating",
+    "maxWidth": 120,
+    "focusable": true
+  },
+  "dialog.floatBorderHighlight": "Normal",
+  "dialog.rounded": true,
+  "notification.border": true,
+  "diagnostic.errorSign": "", //  ••
+  "diagnostic.warningSign": "", //  •
+  "diagnostic.hintSign": "♪", // •
+  "diagnostic.infoSign": "", // •
+  "intelephense.format.braces": "k&r"
 }

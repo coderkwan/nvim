@@ -6,8 +6,8 @@ set linebreak
 set autoindent 
 filetype plugin indent on
 set breakindent 
-set tabstop=4 
-set shiftwidth=4 
+set tabstop=2 
+set shiftwidth=2 
 set expandtab 
 set signcolumn=yes 
 set cursorline 
@@ -29,7 +29,9 @@ let g:gruvbox_material_background = 'hard'
 
 colorscheme gruvbox-material
 
-au BufEnter,BufNew *.php :set filetype=html
+:let g:NERDTreeWinSize=40
+
+" au BufEnter,BufNew *.php :set filetype=html
 
 
 " hi Normal guibg=NONE ctermbg=NONE
