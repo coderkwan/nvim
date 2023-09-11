@@ -29,7 +29,7 @@ let g:gruvbox_material_background = 'hard'
 
 colorscheme gruvbox-material
 
-:let g:NERDTreeWinSize=40
+:let g:NERDTreeWinSize=30
 
 " au BufEnter,BufNew *.php :set filetype=html
 

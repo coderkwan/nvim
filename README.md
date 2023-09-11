@@ -1,4 +1,4 @@
-# Simple neovim configuaration for web developement
+# Simple neovim configuaration for web developement and beyond
 
 Includes:
 Autocompletion
