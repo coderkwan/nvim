@@ -61,7 +61,7 @@ require("indent_blankline").setup {
     },
 }
 
---require('bufferline').setup()
+require('bufferline').setup()
 
 require('lualine').setup({
     options ={
