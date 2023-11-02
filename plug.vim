@@ -2,6 +2,8 @@ call plug#begin()
 
 " colorscheme
 Plug 'sainnhe/gruvbox-material'
+Plug 'Tsuzat/NeoSolarized.nvim'
+Plug 'kvrohit/rasmus.nvim'
 
 Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
