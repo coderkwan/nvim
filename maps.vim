@@ -16,7 +16,7 @@ nmap <silent> gr <Plug>(coc-references)
 
 " ======================================
 " nnoremap <C-b> :NERDTreeFocus<CR>
-nnoremap <C-n> :Vexplore<CR>
+nnoremap <C-n> :Neotree<CR>
 " nnoremap <C-m> :NERDTreeToggle<CR>
 
 "==================================

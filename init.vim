@@ -29,9 +29,6 @@ let g:coc_global_extensions=[ 'coc-emmet',"coc-omnisharp", 'coc-json', 'coc-blad
 
 let $FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git \) -prune -o -print'
 
-let g:netrw_winsize=20
-let g:netrw_banner=0
-
 " Set the *.blade.php file to be filetype of blade 
 
 "==================================

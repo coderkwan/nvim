@@ -4,7 +4,12 @@ call plug#begin()
 Plug 'bluz71/vim-moonfly-colors', { 'as': 'moonfly' }
 
 " Plug 'preservim/nerdtree'
-Plug 'ryanoasis/vim-devicons'
+Plug 'nvim-neo-tree/neo-tree.nvim'
+" Plug 'ryanoasis/vim-devicons'
+Plug 'nvim-lua/plenary.nvim' 
+Plug 'nvim-tree/nvim-web-devicons'
+ Plug 'MunifTanjim/nui.nvim'
+ Plug '3rd/image.nvim'
 
 " statusline
 Plug 'nvim-lualine/lualine.nvim'
