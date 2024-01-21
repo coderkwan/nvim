@@ -25,7 +25,7 @@ runtime ./maps.vim
 "General ==================================
 colorscheme moonfly
 
-let g:coc_global_extensions=[ 'coc-emmet', 'coc-json', 'coc-blade', 'coc-tsserver', 'coc-css', 'coc-html']
+let g:coc_global_extensions=[ 'coc-emmet',"coc-omnisharp", 'coc-json', 'coc-blade', 'coc-tsserver', 'coc-css', 'coc-html']
 
 let $FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git \) -prune -o -print'
 
@@ -64,7 +64,7 @@ parser_config.blade = {
 }
 
 require('nvim-treesitter').setup({
-  ensure_installed = { "javascript", "yaml","tsx", "html","json","scss", "typescript", "css", "lua", "vim", "vimdoc", "query" },
+  ensure_installed = { "javascript", "yaml","tsx", "html","json","c_sharp","scss", "typescript", "css", "lua", "vim", "vimdoc", "query" },
 })
 EOF
 
