@@ -4,8 +4,8 @@
     "prettier.bracketSameLine": true,
     "coc.preferences.formatOnSave": true,
     "diagnostic.messageTarget": "float",
-    "phpls.enable": true,
     "diagnostic.separateRelatedInformationAsDiagnostics": true,
+    "emmet.includeLanguages": { "blade": "html" },
     "floatFactory.floatConfig": {
         "border": true
     },
@@ -45,6 +45,5 @@
     "diagnostic.errorSign": "", //  ••
     "diagnostic.warningSign": "", //  •
     "diagnostic.hintSign": "♪", // •
-    "diagnostic.infoSign": "", // •
-    "intelephense.format.braces": "k&r"
+    "diagnostic.infoSign": "" // •
 }

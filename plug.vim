@@ -1,7 +1,7 @@
 call plug#begin()
 
 " colorscheme
-Plug 'kvrohit/rasmus.nvim'
+Plug 'bluz71/vim-moonfly-colors', { 'as': 'moonfly' }
 
 " Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
@@ -19,7 +19,6 @@ Plug 'kyazdani42/nvim-web-devicons'
 Plug 'tpope/vim-commentary'
 
 " autoclose tags
-" Plug 'townk/vim-autoclose'
 Plug 'jiangmiao/auto-pairs'
 
 " fuzzy finder
@@ -46,6 +45,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " syntax highlight
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} 
+Plug 'jwalton512/vim-blade'
 
 call plug#end()
 

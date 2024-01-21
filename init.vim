@@ -1,10 +1,11 @@
 set nu 
+set rnu
 syntax on
+filetype plugin indent on
 set background=dark
 set termguicolors
 set linebreak 
 set autoindent 
-filetype plugin indent on
 set breakindent 
 set tabstop=4 
 set shiftwidth=4 
@@ -22,14 +23,24 @@ runtime ./plug.vim
 runtime ./maps.vim
 
 "General ==================================
+colorscheme moonfly
+
 let $FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git \) -prune -o -print'
-colorscheme rasmus
-" :let g:NERDTreeWinSize=30
-" au BufEnter,BufNew *.php :set filetype=html
+
+let g:netrw_winsize=20
+let g:netrw_banner=0
+
+" Set the *.blade.php file to be filetype of blade 
 
 "==================================
 lua << EOF
 require('bufferline').setup()
+
+vim.filetype.add({
+  pattern = {
+    ['.*%.blade%.php'] = 'blade',
+  },
+})
 
 require('lualine').setup({
     options ={
@@ -38,10 +49,23 @@ require('lualine').setup({
     }
 })
 
+require("ibl").setup()
+
+local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
+parser_config.blade = {
+  install_info = {
+    url = "https://github.com/EmranMR/tree-sitter-blade",
+    files = {"src/parser.c"},
+    branch = "main",
+  },
+  filetype = "blade"
+}
+
 require('nvim-treesitter').setup({
   ensure_installed = { "javascript", "yaml","tsx", "html","json","scss", "typescript", "css", "lua", "vim", "vimdoc", "query" },
 })
 EOF
+
 
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
