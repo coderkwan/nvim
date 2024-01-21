@@ -25,6 +25,8 @@ runtime ./maps.vim
 "General ==================================
 colorscheme moonfly
 
+let g:coc_global_extensions=[ 'coc-emmet', 'coc-json', 'coc-blade', 'coc-tsserver', 'coc-css', 'coc-html']
+
 let $FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git \) -prune -o -print'
 
 let g:netrw_winsize=20
