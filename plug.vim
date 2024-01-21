@@ -1,11 +1,9 @@
 call plug#begin()
 
 " colorscheme
-Plug 'sainnhe/gruvbox-material'
-Plug 'Tsuzat/NeoSolarized.nvim'
 Plug 'kvrohit/rasmus.nvim'
 
-Plug 'preservim/nerdtree'
+" Plug 'preservim/nerdtree'
 Plug 'ryanoasis/vim-devicons'
 
 " statusline
@@ -36,6 +34,9 @@ Plug 'maxmellon/vim-jsx-pretty'
 
 " indentation guide
 Plug 'lukas-reineke/indent-blankline.nvim'
+
+" Highlight similar words
+Plug 'RRethy/vim-illuminate'
 
 " css color
 Plug 'ap/vim-css-color'

@@ -16,8 +16,8 @@ nmap <silent> gr <Plug>(coc-references)
 
 " ======================================
 " nnoremap <C-b> :NERDTreeFocus<CR>
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-m> :NERDTreeToggle<CR>
+" nnoremap <C-n> :NERDTree<CR>
+" nnoremap <C-m> :NERDTreeToggle<CR>
 
 "==================================
 " Telescope

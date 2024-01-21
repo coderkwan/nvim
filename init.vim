@@ -21,18 +21,14 @@ set updatetime=300
 runtime ./plug.vim 
 runtime ./maps.vim
 
-
 "General ==================================
 let $FZF_DEFAULT_COMMAND='find . \( -name node_modules -o -name .git \) -prune -o -print'
 colorscheme rasmus
-:let g:NERDTreeWinSize=30
-
+" :let g:NERDTreeWinSize=30
 " au BufEnter,BufNew *.php :set filetype=html
-
 
 "==================================
 lua << EOF
-
 require('bufferline').setup()
 
 require('lualine').setup({
