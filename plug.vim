@@ -43,7 +43,7 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'RRethy/vim-illuminate'
 
 " css color
-Plug 'ap/vim-css-color'
+" Plug 'ap/vim-css-color'
 
 " auto completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
