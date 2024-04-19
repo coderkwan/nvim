@@ -3,14 +3,6 @@ call plug#begin()
 " colorscheme
 Plug 'bluz71/vim-moonfly-colors', { 'as': 'moonfly' }
 
-" Plug 'preservim/nerdtree'
-Plug 'nvim-neo-tree/neo-tree.nvim'
-" Plug 'ryanoasis/vim-devicons'
-Plug 'nvim-lua/plenary.nvim' 
-Plug 'nvim-tree/nvim-web-devicons'
- Plug 'MunifTanjim/nui.nvim'
- Plug '3rd/image.nvim'
-
 " statusline
 Plug 'nvim-lualine/lualine.nvim'
 
@@ -26,9 +18,9 @@ Plug 'tpope/vim-commentary'
 " autoclose tags
 Plug 'jiangmiao/auto-pairs'
 
-" fuzzy finder
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+" telescope
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.6' }
 
 " auto rename corresponding tag
 Plug 'AndrewRadev/tagalong.vim'
@@ -41,9 +33,6 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 
 " Highlight similar words
 Plug 'RRethy/vim-illuminate'
-
-" css color
-" Plug 'ap/vim-css-color'
 
 " auto completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}

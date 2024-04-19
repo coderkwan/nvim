@@ -15,18 +15,11 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gr <Plug>(coc-references)
 
 " ======================================
-" nnoremap <C-b> :NERDTreeFocus<CR>
 nnoremap <C-n> :Neotree<CR>
-" nnoremap <C-m> :NERDTreeToggle<CR>
 
 "==================================
 " Telescope
-nnoremap <C-l> :Files <CR>
-nnoremap <C-b> :Buffers <CR>
-"==================================
-" php-html
-nnoremap <C-/> :set filetype=php <CR>
-nnoremap <C-.> :set filetype=html <CR>
+nnoremap <C-l> :Telescope find_files <CR>
 
 "==================================
 "Tabline
