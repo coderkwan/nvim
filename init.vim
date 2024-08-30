@@ -27,8 +27,6 @@ colorscheme duskfox
 
 let g:coc_global_extensions=[ '@yaegassy/coc-intelephense','coc-emmet',"coc-omnisharp", 'coc-json', 'coc-blade', 'coc-tsserver', 'coc-css', 'coc-html']
 
-let $FZF_DEFAULT_COMMAND='find . \( -name {node_modules, vendor} -o -name .git \) -prune -o -print'
-
 " Set the *.blade.php file to be filetype of blade 
 
 "==================================
@@ -63,6 +61,9 @@ parser_config.blade = {
 require('nvim-treesitter').setup({
   ensure_installed = { "javascript", "yaml","tsx", "html","json","c_sharp","scss", "typescript", "css", "lua", "vim", "vimdoc", "query" },
 })
+
+require('telescope').setup({defaults={file_ignore_patterns = {"vendor", "node_modules"}, }})
+
 EOF
 
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
