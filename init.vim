@@ -16,6 +16,7 @@ set clipboard-=autoselect
 set nobackup 
 set nowritebackup 
 set updatetime=300 
+set mouse=
 
 
 "Imports ==================================
