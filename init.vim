@@ -26,7 +26,7 @@ runtime ./maps.vim
 "General ==================================
 colorscheme duskfox
 
-let g:coc_global_extensions=[ '@yaegassy/coc-intelephense','coc-emmet',"coc-omnisharp", 'coc-json', 'coc-blade', 'coc-tsserver', 'coc-css', 'coc-html']
+let g:coc_global_extensions=[ 'coc-pyright','@yaegassy/coc-intelephense','coc-emmet',"coc-omnisharp", 'coc-json', 'coc-blade', 'coc-tsserver', 'coc-css', 'coc-html']
 
 " Set the *.blade.php file to be filetype of blade 
 
