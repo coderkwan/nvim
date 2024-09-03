@@ -2,10 +2,6 @@ call plug#begin()
 
 " colorscheme
 Plug 'bluz71/vim-moonfly-colors', { 'as': 'moonfly' }
-Plug 'rebelot/kanagawa.nvim'
-Plug 'EdenEast/nightfox.nvim' " Vim-Plug
-Plug 'glepnir/zephyr-nvim'
-Plug 'NTBBloodbath/doom-one.nvim'
 
 " statusline
 Plug 'nvim-lualine/lualine.nvim'
