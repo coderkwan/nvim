@@ -47,6 +47,7 @@ Plug 'jwalton512/vim-blade'
 
 " php
 Plug 'yaegassy/coc-intelephense', {'do': 'yarn install --frozen-lockfile'}
+Plug 'OmniSharp/omnisharp-vim'
 
 call plug#end()
 

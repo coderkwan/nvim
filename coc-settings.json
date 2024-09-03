@@ -5,8 +5,9 @@
     "coc.preferences.formatOnSave": true,
     "diagnostic.messageTarget": "float",
     "diagnostic.separateRelatedInformationAsDiagnostics": true,
-    "emmet.includeLanguages": { "blade": "html" },
-    "omnisharp.path": "/usr/bin/omnisharp",
+    "emmet.includeLanguages": {
+        "blade": "html"
+    },
     "floatFactory.floatConfig": {
         "border": true
     },
