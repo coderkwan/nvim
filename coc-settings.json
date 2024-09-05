@@ -5,6 +5,7 @@
     "coc.preferences.formatOnSave": true,
     "diagnostic.messageTarget": "float",
     "diagnostic.separateRelatedInformationAsDiagnostics": true,
+    "inlayHint.enable": false,
     "emmet.includeLanguages": {
         "blade": "html"
     },
