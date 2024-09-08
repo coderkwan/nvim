@@ -1,7 +1,7 @@
 call plug#begin()
 
 " colorscheme
-Plug 'bluz71/vim-moonfly-colors', { 'as': 'moonfly' }
+Plug 'folke/tokyonight.nvim'
 
 " statusline
 Plug 'nvim-lualine/lualine.nvim'

@@ -17,6 +17,7 @@ set nobackup
 set nowritebackup 
 set updatetime=300 
 set mouse=
+set clipboard+=unnamedplus
 
 
 "Imports ==================================
@@ -24,7 +25,7 @@ runtime ./plug.vim
 runtime ./maps.vim
 
 "General ==================================
-colorscheme moonfly
+colorscheme tokyonight-night
 
 let g:coc_global_extensions=[ 'coc-pyright','@yaegassy/coc-intelephense','coc-emmet',"coc-omnisharp", 'coc-json', 'coc-blade', 'coc-tsserver', 'coc-css', 'coc-html']
 
