@@ -34,6 +34,11 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 " Highlight similar words
 Plug 'RRethy/vim-illuminate'
 
+" File Tree
+Plug 'nvim-neo-tree/neo-tree.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'MunifTanjim/nui.nvim'
+
 " auto completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 

@@ -18,6 +18,7 @@ set nowritebackup
 set updatetime=300 
 set mouse=
 set clipboard+=unnamedplus
+set columns=90
 
 
 "Imports ==================================
