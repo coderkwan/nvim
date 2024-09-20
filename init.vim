@@ -18,8 +18,7 @@ set nowritebackup
 set updatetime=300 
 set mouse=
 set clipboard+=unnamedplus
-set columns=90
-
+set colorcolumn=90
 
 "Imports ==================================
 runtime ./plug.vim 
@@ -28,7 +27,12 @@ runtime ./maps.vim
 "General ==================================
 colorscheme tokyonight-night
 
-let g:coc_global_extensions=[ 'coc-pyright','@yaegassy/coc-intelephense','coc-emmet',"coc-omnisharp", 'coc-json', 'coc-blade', 'coc-tsserver', 'coc-css', 'coc-html']
+highlight Normal guibg=none
+highlight NonText guibg=none
+highlight Normal ctermbg=none
+highlight NonText ctermbg=none
+
+let g:coc_global_extensions=['coc-go', 'coc-pyright','@yaegassy/coc-intelephense','coc-emmet',"coc-omnisharp", 'coc-json', 'coc-blade', 'coc-tsserver', 'coc-css', 'coc-html']
 
 " Set the *.blade.php file to be filetype of blade 
 

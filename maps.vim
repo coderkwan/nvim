@@ -1,6 +1,7 @@
 "Genera
 "==================================
 inoremap jk <Esc>
+nnoremap '' :w<CR>
 nnoremap <F2> :q<CR>
 nnoremap <F3> :w<CR>
 nnoremap <F4> :so %<CR>
