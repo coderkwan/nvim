@@ -20,31 +20,22 @@ set mouse=
 set clipboard+=unnamedplus
 set colorcolumn=90
 
-"Imports ==================================
 runtime ./plug.vim 
 runtime ./maps.vim
 
-"General ==================================
 colorscheme tokyonight-night
+let g:netrw_winsize=20
+let g:coc_global_extensions=['coc-pyright','coc-emmet', 'coc-json', 'coc-tsserver', 'coc-css', 'coc-html']
 
+" Remove background
 highlight Normal guibg=none
 highlight NonText guibg=none
 highlight Normal ctermbg=none
 highlight NonText ctermbg=none
 
-let g:coc_global_extensions=['coc-go', 'coc-pyright','@yaegassy/coc-intelephense','coc-emmet',"coc-omnisharp", 'coc-json', 'coc-blade', 'coc-tsserver', 'coc-css', 'coc-html']
 
-" Set the *.blade.php file to be filetype of blade 
-
-"==================================
 lua << EOF
 require('bufferline').setup()
-
-vim.filetype.add({
-  pattern = {
-    ['.*%.blade%.php'] = 'blade',
-  },
-})
 
 require('lualine').setup({
     options ={
@@ -55,21 +46,11 @@ require('lualine').setup({
 
 require("ibl").setup()
 
-local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
-parser_config.blade = {
-  install_info = {
-    url = "https://github.com/EmranMR/tree-sitter-blade",
-    files = {"src/parser.c"},
-    branch = "main",
-  },
-  filetype = "blade"
-}
-
 require('nvim-treesitter').setup({
-  ensure_installed = { "javascript", "yaml","tsx", "html","json","c_sharp","scss", "typescript", "css", "lua", "vim", "vimdoc", "query" },
+  ensure_installed = { "javascript", "yaml","tsx", "html","json", "typescript", "css", "vim", "vimdoc", "query" },
 })
 
-require('telescope').setup({defaults={file_ignore_patterns = {"vendor", "node_modules"}, }})
+require('telescope').setup({defaults={file_ignore_patterns = {"node_modules"}, }})
 
 EOF
 

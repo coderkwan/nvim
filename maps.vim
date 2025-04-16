@@ -16,7 +16,7 @@ nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gr <Plug>(coc-references)
 
 " ======================================
-nnoremap <C-n> :Neotree<CR>
+nnoremap <C-n> :Vex<CR>
 
 "==================================
 " Telescope

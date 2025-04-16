@@ -10,10 +10,10 @@ Plug 'nvim-lualine/lualine.nvim'
 Plug 'akinsho/bufferline.nvim'
 
 " glyphs/icons
-Plug 'kyazdani42/nvim-web-devicons'
+" Plug 'kyazdani42/nvim-web-devicons'
 
 " comment/uncomment code with gcc
-Plug 'tpope/vim-commentary'
+" Plug 'tpope/vim-commentary'
 
 " autoclose tags
 Plug 'jiangmiao/auto-pairs'
@@ -35,20 +35,15 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'RRethy/vim-illuminate'
 
 " File Tree
-Plug 'nvim-neo-tree/neo-tree.nvim'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'MunifTanjim/nui.nvim'
+" Plug 'nvim-neo-tree/neo-tree.nvim'
+" Plug 'nvim-lua/plenary.nvim'
+" Plug 'MunifTanjim/nui.nvim'
 
 " auto completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " syntax highlight
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} 
-Plug 'jwalton512/vim-blade'
-
-" php
-Plug 'yaegassy/coc-intelephense', {'do': 'yarn install --frozen-lockfile'}
-Plug 'OmniSharp/omnisharp-vim'
 
 call plug#end()
 
