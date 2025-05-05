@@ -25,7 +25,7 @@ runtime ./maps.vim
 
 colorscheme tokyonight-night
 let g:netrw_winsize=20
-let g:coc_global_extensions=['coc-pyright','coc-emmet', 'coc-json', 'coc-tsserver', 'coc-css', 'coc-html']
+let g:coc_global_extensions=['coc-pyright','coc-clangd','coc-emmet', 'coc-json', 'coc-tsserver', 'coc-css', 'coc-html']
 
 " Remove background
 highlight Normal guibg=none
