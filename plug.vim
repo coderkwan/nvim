@@ -9,12 +9,6 @@ Plug 'nvim-lualine/lualine.nvim'
 " bufferline
 Plug 'akinsho/bufferline.nvim'
 
-" glyphs/icons
-" Plug 'kyazdani42/nvim-web-devicons'
-
-" comment/uncomment code with gcc
-" Plug 'tpope/vim-commentary'
-
 " autoclose tags
 Plug 'jiangmiao/auto-pairs'
 
@@ -34,16 +28,10 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 " Highlight similar words
 Plug 'RRethy/vim-illuminate'
 
-" File Tree
-" Plug 'nvim-neo-tree/neo-tree.nvim'
-" Plug 'nvim-lua/plenary.nvim'
-" Plug 'MunifTanjim/nui.nvim'
 
 " auto completion
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-" syntax highlight
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} 
 
 call plug#end()
 
